@@ -1,0 +1,58 @@
+{
+  "name": "miny",
+  "description": "Minimal node boilerplate",
+  "version": "1.0.0",
+  "author": "Pablo Varela <pablovarela182@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/pablopunk/miny/issues",
+    "email": "pablovarela182@gmail.com"
+  },
+  "contributors": [
+    "Pablo Varela <pablovarela182@gmail.com>"
+  ],
+  "dependencies": {
+    "gravatar-url": "^2.0.0",
+    "npm-name": "^3.1.0",
+    "sao": "^0.22.3"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "codecov": "*",
+    "nyc": "*",
+    "standard": "*"
+  },
+  "homepage": "https://github.com/pablopunk/miny",
+  "keywords": [
+    "miny",
+    "boilerplate",
+    "lass",
+    "node",
+    "module",
+    "npm",
+    "automatic",
+    "create",
+    "lint",
+    "test",
+    "ava",
+    "standard"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "html",
+      "text"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pablopunk/miny"
+  },
+  "scripts": {
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "lint": "standard",
+    "test": "npm run lint && npm run test-coverage",
+    "test-coverage": "nyc ava"
+  }
+}
