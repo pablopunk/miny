@@ -29,6 +29,7 @@ test('Defaults', async t => {
     {
       name: 'no-way-this-exists-already',
       email: 'pablovarela182@gmail.com',
+      author: 'Pablo Varela',
       githubUsername: 'foo'
     }
   )
