@@ -9,7 +9,7 @@ const defaults = {
   author: 'Pablo Varela',
   email: 'pablovarela182@gmail.com',
   website: 'https:/pablo.life',
-  githubUser: 'pablopunk',
+  githubUsername: 'pablopunk',
   keywords: 'boilerplate, generator,, npm   package ,,,  miny'
 }
 
@@ -21,4 +21,32 @@ test('Invalid name', async t => {
     )
   )
   t.regex(err.message, /That name already exists on npm/)
+})
+
+test('Defaults', async t => {
+  const stream = await sao.mockPrompt(
+    template,
+    {
+      name: 'no-way-this-exists-already',
+      email: 'pablovarela182@gmail.com',
+      githubUsername: 'foo'
+    }
+  )
+  const answers = stream.meta.answers
+  t.deepEqual(
+    answers,
+    Object.assign(
+      {},
+      defaults,
+      {
+        name: 'no-way-this-exists-already',
+        description: 'My new npm module',
+        githubUsername: 'foo',
+        website: 'http://foo.com',
+        githubRepo: 'https://github.com/foo/no-way-this-exists-already',
+        authorImg: 'https://gravatar.com/avatar/fa50aeff0ddd6e63273a068b04353d9d?size=200',
+        keywords: 'miny no-way-this-exists-already'
+      }
+    )
+  )
 })
