@@ -26,6 +26,13 @@ miny my-awesome-project
 ```
 
 
+## Related
+
+I made this little module with the defaults I use for my little projects.
+If you want a good and reliable boilerplate use [lass](http://lass.js.org),
+the project that inspired this repo.
+
+
 ## License
 
 MIT
