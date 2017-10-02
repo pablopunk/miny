@@ -3,6 +3,7 @@
   "description": "Minimal node boilerplate",
   "version": "1.1.0",
   "author": "Pablo Varela <pablovarela182@gmail.com>",
+  "bin": "cli.js",
   "bugs": {
     "url": "https://github.com/pablopunk/miny/issues",
     "email": "pablovarela182@gmail.com"
@@ -37,7 +38,6 @@
     "standard"
   ],
   "license": "MIT",
-  "main": "index.js",
   "nyc": {
     "reporter": [
       "lcov",
