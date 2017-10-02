@@ -39,7 +39,7 @@ module.exports = {
     },
     authorImg: {
       message: 'Your profile picture (link)',
-      default: answers => gravatarUrl(answers.email, {size: 200}),
+      default: answers => gravatarUrl(answers.email, {size: 100}),
       store: true
     },
     keywords: {

@@ -44,7 +44,7 @@ MIT
 
 ## Author
 
-| ![me](https://gravatar.com/avatar/fa50aeff0ddd6e63273a068b04353d9d?size=200)                                 |
-| ------------------------------------------------------- |
-| © 2017 [Pablo Varela](http://pablo.life) |
+| ![me](https://gravatar.com/avatar/fa50aeff0ddd6e63273a068b04353d9d?size=100) |
+| ---------------------------------------------------------------------------- |
+| © 2017 [Pablo Varela](http://pablo.life)                                     |
 
