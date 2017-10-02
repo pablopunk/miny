@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  Minimal node boilerplate
+  <i>Minimal node boilerplate</i>
 </p>
 
 

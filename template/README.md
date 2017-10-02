@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <%- description %>
+  <i><%- description %></i>
 </p>
 
 
