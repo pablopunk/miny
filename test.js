@@ -45,7 +45,7 @@ test('Defaults', async t => {
         githubUsername: 'foo',
         website: 'http://foo.com',
         githubRepo: 'https://github.com/foo/no-way-this-exists-already',
-        authorImg: 'https://gravatar.com/avatar/fa50aeff0ddd6e63273a068b04353d9d?size=200',
+        authorImg: 'https://gravatar.com/avatar/fa50aeff0ddd6e63273a068b04353d9d?size=100',
         keywords: 'miny no-way-this-exists-already'
       }
     )
