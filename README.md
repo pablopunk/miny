@@ -10,6 +10,9 @@
 <p align="center">
   <i>Minimal node boilerplate</i>
 </p>
+<p align="center">
+  <img src="https://github.com/pablopunk/art/raw/master/miny/miny.jpg" />
+</p>
 
 
 ## Install
