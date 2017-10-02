@@ -4,6 +4,7 @@
   <a href="https://travis-ci.org/pablopunk/miny"><img src="https://img.shields.io/travis/pablopunk/miny.svg" /> </a>
   <a href="https://codecov.io/gh/pablopunk/miny"><img src="https://img.shields.io/codecov/c/github/pablopunk/miny.svg" /> </a>
   <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" /> </a>
+  <a href="https://github.com/pablopunk/miny"><img src="https://img.shields.io/badge/made_with-miny-1eced8.svg" /> </a>
 </p>
 
 <p align="center">
