@@ -1,4 +1,4 @@
-# miny
+# 💁🏻 miny
 
 <p align="center">
   <a href="https://travis-ci.org/pablopunk/miny"><img src="https://img.shields.io/travis/pablopunk/miny.svg" /> </a>
