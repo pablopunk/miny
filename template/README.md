@@ -22,7 +22,7 @@ npm install <%- name %>
 
 ## Usage
 
-```sh
+```js
 const <%- name %> = require('<%- name %>')
 // use as you like
 ```
