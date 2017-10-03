@@ -32,7 +32,7 @@ miny my-awesome-project
 
 ## Related
 
-I made this little module with the defaults I use for my little projects.
+I made this little module with the defaults I usually use for my npm modules.
 If you want a good and reliable boilerplate use [lass](http://lass.js.org),
 the project that inspired this repo.
 
