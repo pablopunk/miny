@@ -1,4 +1,4 @@
-# miny
+# 💁🏻 miny
 
 <p align="center">
   <a href="https://travis-ci.org/pablopunk/miny"><img src="https://img.shields.io/travis/pablopunk/miny.svg" /> </a>
@@ -37,6 +37,12 @@ miny my-awesome-project
 | code style | [standard](https://github.com/standard/standard) |
 | code coverage | [nyc](https://github.com/istanbuljs/nyc) and [codecov](https://codecov.io/) |
 
+## Examples
+
+* miny itself was created with miny. Yes.
+* [prepend-url](https://github.com/pablopunk/prepend-url)
+* [microfetch](https://github.com/pablopunk/microfetch)
+* _Add yours here_... 😊
 
 ## Related
 
