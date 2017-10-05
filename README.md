@@ -34,7 +34,7 @@ miny my-awesome-project
 * miny itself was created with miny. Yes.
 * [prepend-url](https://github.com/pablopunk/prepend-url)
 * [microfetch](https://github.com/pablopunk/microfetch)
-* Add yours here... 😊
+* _Add yours here_... 😊
 
 ## Related
 
