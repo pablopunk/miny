@@ -29,6 +29,11 @@ npm install -g miny
 miny my-awesome-project
 ```
 
+## Examples
+
+* miny itself was created with miny. Yes.
+* [prepend-url](https://github.com/pablopunk/prepend-url)
+* [microfetch](https://github.com/pablopunk/microfetch)
 
 ## Related
 
