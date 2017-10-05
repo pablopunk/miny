@@ -47,9 +47,7 @@ module.exports = {
       default: answers => `miny ${answers.name}`
     }
   },
-  post: async ctx => {
-    ctx.gitInit()
-    ctx.npmInstall()
-    ctx.showTip()
-  }
+  gitInit: true,
+  npmInstall: true,
+  showTip: true
 }
