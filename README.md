@@ -29,6 +29,14 @@ npm install -g miny
 miny my-awesome-project
 ```
 
+[![preview](https://github.com/pablopunk/art/raw/master/miny/preview.gif)](https://dr5mo5s7lqrtc.cloudfront.net/items/3L252b3Y3l3N1H1k3Y3y/miny.mp4)
+
+| Features | Tools |
+| - | - |
+| tests | [ava](https://github.com/avajs/ava) and [travis-ci](http://travis-ci.org/) |
+| code style | [standard](https://github.com/standard/standard) |
+| code coverage | [nyc](https://github.com/istanbuljs/nyc) and [codecov](https://codecov.io/) |
+
 
 ## Related
 
