@@ -13,13 +13,19 @@ const defaults = {
   keywords: 'boilerplate, generator,, npm   package ,,,  miny'
 }
 
-test('Invalid name', async t => {
+test('Invalid npm name', async t => {
   const err = await t.throws(
     sao.mockPrompt(
       template,
-      Object.assign({}, defaults, { name: 'foo' })
-    )
-  )
+      Object.assign({}, defaults, { name: 'ñ' })))
+  t.regex(err.message, /package name had non-URL-safe characters/)
+})
+
+test('Name already exists on npm', async t => {
+  const err = await t.throws(
+    sao.mockPrompt(
+      template,
+      Object.assign({}, defaults, { name: 'foo' })))
   t.regex(err.message, /That name already exists on npm/)
 })
 

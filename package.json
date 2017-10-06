@@ -13,6 +13,7 @@
   ],
   "dependencies": {
     "gravatar-url": "^2.0.0",
+    "is-valid-npm-name": "0.0.4",
     "npm-name": "^3.1.0",
     "sao": "^0.22.3"
   },

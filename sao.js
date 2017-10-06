@@ -1,5 +1,6 @@
 const npmName = require('npm-name')
 const gravatarUrl = require('gravatar-url')
+const isValidNpmName = require('is-valid-npm-name')
 
 module.exports = {
   enforceNewFolder: true,
@@ -7,7 +8,13 @@ module.exports = {
     name: {
       message: 'Name of your project',
       default: ':folderName:',
-      validate: async v => (await npmName(v)) ? true : 'That name already exists on npm'
+      validate: async v => {
+        const isValid = isValidNpmName(v)
+        if (isValid !== true) {
+          return isValid
+        }
+        return (await npmName(v)) ? true : 'That name already exists on npm'
+      }
     },
     description: {
       message: 'Description',
