@@ -12,6 +12,7 @@
     "Pablo Varela <pablovarela182@gmail.com>"
   ],
   "dependencies": {
+    "camelcase": "^4.1.0",
     "gravatar-url": "^2.0.0",
     "is-valid-npm-name": "0.0.4",
     "npm-name": "^3.1.0",

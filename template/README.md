@@ -23,7 +23,7 @@ npm install <%- name %>
 ## Usage
 
 ```js
-const <%- name %> = require('<%- name %>')
+const <%- name.replace(/-([a-z])/g, function (g) { return g[1].toUpperCase(); }); %> = require('<%- name %>')
 // use as you like
 ```
 
