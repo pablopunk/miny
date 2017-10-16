@@ -25,11 +25,17 @@ npm install -g miny
 
 ## Usage
 
+### Generate a new project
+
 ```sh
 miny my-awesome-project
 ```
 
+### Video
+
 [![preview](https://github.com/pablopunk/art/raw/master/miny/preview.gif)](https://dr5mo5s7lqrtc.cloudfront.net/items/3L252b3Y3l3N1H1k3Y3y/miny.mp4)
+
+### Features
 
 | Features | Tools |
 | - | - |
