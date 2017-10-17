@@ -5,7 +5,7 @@
   <a href="https://codecov.io/gh/pablopunk/miny"><img src="https://img.shields.io/codecov/c/github/pablopunk/miny.svg" /> </a>
   <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" /> </a>
   <a href="https://github.com/pablopunk/miny"><img src="https://img.shields.io/badge/made_with-miny-1eced8.svg" /> </a>
-  <a href="https://www.npmjs.com/package/miny"><img src="http://img.shields.io/npm/dt/miny.svg" /></a>
+  <a href="https://www.npmjs.com/package/miny"><img src="https://img.shields.io/npm/dt/miny.svg" /></a>
 </p>
 
 <p align="center">
@@ -39,7 +39,7 @@ miny my-awesome-project
 
 | Features | Tools |
 | - | - |
-| tests | [ava](https://github.com/avajs/ava) and [travis-ci](http://travis-ci.org/) |
+| tests | [ava](https://github.com/avajs/ava) and [travis-ci](https://travis-ci.org/) |
 | code style | [standard](https://github.com/standard/standard) |
 | code coverage | [nyc](https://github.com/istanbuljs/nyc) and [codecov](https://codecov.io/) |
 
@@ -53,7 +53,7 @@ miny my-awesome-project
 ## Related
 
 I made this little module with the defaults I usually use for my npm modules.
-If you want a good and reliable boilerplate use [lass](http://lass.js.org),
+If you want a good and reliable boilerplate use [lass](https://lass.js.org),
 the project that inspired this repo.
 
 
@@ -66,5 +66,5 @@ MIT
 
 | ![me](https://gravatar.com/avatar/fa50aeff0ddd6e63273a068b04353d9d?size=100) |
 | ---------------------------------------------------------------------------- |
-| [Pablo Varela](http://pablo.life)                                            |
+| [Pablo Varela](https://pablo.life)                                            |
 
