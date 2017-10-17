@@ -1,7 +1,7 @@
 {
   "name": "miny",
   "description": "Minimal node boilerplate",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "author": "Pablo Varela <pablovarela182@gmail.com>",
   "bin": "cli.js",
   "bugs": {
