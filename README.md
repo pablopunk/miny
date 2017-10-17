@@ -42,6 +42,7 @@ miny my-awesome-project
 | tests | [ava](https://github.com/avajs/ava) and [travis-ci](https://travis-ci.org/) |
 | code style | [standard](https://github.com/standard/standard) |
 | code coverage | [nyc](https://github.com/istanbuljs/nyc) and [codecov](https://codecov.io/) |
+| source control | [git](https://git-scm.com/)
 
 ## Examples
 
