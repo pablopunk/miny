@@ -1,4 +1,4 @@
-const npmName = require('npm-name')
+const exists = require('npm-name-exists')
 const gravatarUrl = require('gravatar-url')
 const isValidNpmName = require('is-valid-npm-name')
 
@@ -13,7 +13,7 @@ module.exports = {
         if (isValid !== true) {
           return isValid
         }
-        return (await npmName(v)) ? true : 'That name already exists on npm'
+        return (await exists(v)) ? 'That name already exists on npm' : true
       }
     },
     description: {
