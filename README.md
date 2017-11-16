@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <i>Minimal node boilerplate</i>
+  <i>The minimal module generator that generated itself</i>
 </p>
 <p align="center">
   <img src="https://github.com/pablopunk/art/raw/master/miny/miny.jpg" />
