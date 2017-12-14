@@ -15,6 +15,8 @@
   <img src="https://github.com/pablopunk/art/raw/master/miny/miny.jpg" />
 </p>
 
+> This module is a very easy way of getting started in nodejs, npm modules, TDD and CI.
+
 
 ## Install
 
@@ -56,9 +58,8 @@ miny my-awesome-project
 
 ## Related
 
-I made this little module with the defaults I usually use for my npm modules.
-If you want a good and reliable boilerplate use [lass](https://lass.js.org),
-the project that inspired this repo.
+* [lass](https://lass.js.org): Nodejs boilerplate
+* [nuup](https://github.com/pablopunk/nuup): `npm publish` with superpowers
 
 
 ## License
