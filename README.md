@@ -47,6 +47,7 @@ miny my-awesome-project
 ## Examples
 
 * miny itself was created with miny. Yes.
+* [nuup](https://github.com/pablopunk/nuup)
 * [npm-name-exists](https://github.com/pablopunk/npm-name-exists)
 * [prepend-url](https://github.com/pablopunk/prepend-url)
 * [microfetch](https://github.com/pablopunk/microfetch)
