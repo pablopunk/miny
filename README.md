@@ -30,12 +30,19 @@ npm install -g miny
 ### Generate a new project
 
 ```sh
-miny my-awesome-project
+$ miny my-awesome-project
 ```
 
-### Video
-
 [![preview](https://github.com/pablopunk/art/raw/master/miny/preview.gif)](https://dr5mo5s7lqrtc.cloudfront.net/items/3L252b3Y3l3N1H1k3Y3y/miny.mp4)
+
+You can also use de option `-y` to skip all the questions and use the defaults:
+
+```sh
+$ miny my-awesome-project -y
+Creating package in my-awesome-project
+warning The yes flag has been set. This will automatically answer yes to all questions which may have security implications.
+(...)
+```
 
 ### Features
 
