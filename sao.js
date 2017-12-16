@@ -1,6 +1,7 @@
 const exists = require('npm-name-exists')
 const gravatarUrl = require('gravatar-url')
 const isValidNpmName = require('is-valid-npm-name')
+const isOnline = require('is-online')
 
 module.exports = {
   enforceNewFolder: true,
@@ -12,6 +13,10 @@ module.exports = {
         const isValid = isValidNpmName(v)
         if (isValid !== true) {
           return isValid
+        }
+        /* istanbul ignore if */
+        if (!await isOnline()) {
+          return true
         }
         return (await exists(v)) ? 'That name already exists on npm' : true
       }

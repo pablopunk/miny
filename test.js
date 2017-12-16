@@ -1,5 +1,6 @@
 const test = require('ava')
 const sao = require('sao')
+const isOnline = require('is-online')
 
 const template = __dirname
 
@@ -22,6 +23,10 @@ test('Invalid npm name', async t => {
 })
 
 test('Name already exists on npm', async t => {
+  if (!await isOnline()) {
+    t.pass()
+    return
+  }
   const err = await t.throws(
     sao.mockPrompt(
       template,

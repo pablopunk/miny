@@ -14,6 +14,7 @@
   "dependencies": {
     "camelcase": "^4.1.0",
     "gravatar-url": "^2.0.0",
+    "is-online": "^7.0.0",
     "is-valid-npm-name": "0.0.4",
     "mri": "^1.1.0",
     "npm-name-exists": "^1.0.1",
