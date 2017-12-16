@@ -53,6 +53,9 @@ warning The yes flag has been set. This will automatically answer yes to all que
 | code coverage | [nyc](https://github.com/istanbuljs/nyc) and [codecov](https://codecov.io/) |
 | source control | [git](https://git-scm.com/)
 
+Also, *miny* works offline! If you do use it without an internet connection, it won't check
+if the name you choose is available on npm, but it'd still generate the package.
+
 ## Examples
 
 * miny itself was created with miny. Yes.
