@@ -18,6 +18,9 @@
 > This module is a very easy way of getting started in nodejs, npm modules, TDD and CI.
 
 
+[Look at miny's awesome features](#features)
+
+
 ## Install
 
 ```sh
