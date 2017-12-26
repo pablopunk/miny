@@ -53,8 +53,8 @@ warning The yes flag has been set. This will automatically answer yes to all que
 | code coverage | [nyc](https://github.com/istanbuljs/nyc) and [codecov](https://codecov.io/) |
 | source control | [git](https://git-scm.com/)
 
-Also, **_miny_ works offline**! If you do use it without an internet connection, it won't check
-if the name you choose is available on npm, but it will still generate the package.
+Also, **_miny_ works offline**!
+
 
 ## Examples
 
