@@ -1,11 +1,10 @@
 const test = require('ava')
 const sao = require('sao')
-const isOnline = require('is-online')
 
 const template = __dirname
 
 const defaults = {
-  name: 'my-really-awesome-project',
+  name: 'my-project',
   description: 'Awesome project',
   author: 'Pablo Varela',
   email: 'pablovarela182@gmail.com',
@@ -22,23 +21,11 @@ test('Invalid npm name', async t => {
   t.regex(err.message, /package name had non-URL-safe characters/)
 })
 
-test('Name already exists on npm', async t => {
-  if (!await isOnline()) {
-    t.pass()
-    return
-  }
-  const err = await t.throws(
-    sao.mockPrompt(
-      template,
-      Object.assign({}, defaults, { name: 'foo' })))
-  t.regex(err.message, /That name already exists on npm/)
-})
-
 test('Defaults', async t => {
   const stream = await sao.mockPrompt(
     template,
     {
-      name: 'no-way-this-exists-already',
+      name: 'my-project',
       email: 'pablovarela182@gmail.com',
       author: 'Pablo Varela',
       githubUsername: 'foo'
@@ -51,13 +38,13 @@ test('Defaults', async t => {
       {},
       defaults,
       {
-        name: 'no-way-this-exists-already',
+        name: 'my-project',
         description: 'My new npm module',
         githubUsername: 'foo',
         website: 'http://foo.com',
-        githubRepo: 'https://github.com/foo/no-way-this-exists-already',
+        githubRepo: 'https://github.com/foo/my-project',
         authorImg: 'https://gravatar.com/avatar/fa50aeff0ddd6e63273a068b04353d9d?size=100',
-        keywords: 'miny no-way-this-exists-already'
+        keywords: 'miny my-project'
       }
     )
   )
