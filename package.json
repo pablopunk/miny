@@ -1,7 +1,7 @@
 {
   "name": "miny",
   "description": "The minimal module generator that generated itself",
-  "version": "3.2.1",
+  "version": "3.3.0",
   "author": "Pablo Varela <pablovarela182@gmail.com>",
   "bin": "cli.js",
   "bugs": {
