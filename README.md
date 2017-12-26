@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://travis-ci.org/pablopunk/miny"><img src="https://img.shields.io/travis/pablopunk/miny.svg" /> </a>
   <a href="https://codecov.io/gh/pablopunk/miny"><img src="https://img.shields.io/codecov/c/github/pablopunk/miny.svg" /> </a>
-  <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code%20style-standard-06bf94.svg" /> </a>
+  <a href="https://github.com/sindresorhus/xo"><img src="https://img.shields.io/badge/code_style-XO-5ed9c7.svg" /> </a>
   <a href="https://github.com/pablopunk/miny"><img src="https://img.shields.io/badge/made_with-miny-1eced8.svg" /> </a>
   <a href="https://www.npmjs.com/package/miny"><img src="https://img.shields.io/npm/dt/miny.svg" /></a>
 </p>
@@ -49,7 +49,7 @@ warning The yes flag has been set. This will automatically answer yes to all que
 | Features | Tools |
 | - | - |
 | tests | [ava](https://github.com/avajs/ava) and [travis-ci](https://travis-ci.org/) |
-| code style | [standard](https://github.com/standard/standard) |
+| code style | [xo](https://github.com/sindresorhus/xo) (customizable) |
 | code coverage | [nyc](https://github.com/istanbuljs/nyc) and [codecov](https://codecov.io/) |
 | source control | [git](https://git-scm.com/)
 

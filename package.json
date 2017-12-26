@@ -13,6 +13,7 @@
   ],
   "dependencies": {
     "camelcase": "^4.1.0",
+    "chalk": "^2.3.0",
     "gravatar-url": "^2.0.0",
     "is-valid-npm-name": "0.0.4",
     "mri": "^1.1.0",
@@ -22,7 +23,7 @@
     "ava": "*",
     "codecov": "*",
     "nyc": "*",
-    "standard": "*"
+    "xo": "*"
   },
   "homepage": "https://github.com/pablopunk/miny",
   "keywords": [
@@ -37,7 +38,8 @@
     "lint",
     "test",
     "ava",
-    "standard"
+    "standard",
+    "xo"
   ],
   "license": "MIT",
   "nyc": {
@@ -51,9 +53,16 @@
     "type": "git",
     "url": "https://github.com/pablopunk/miny"
   },
+  "xo": {
+    "space": true,
+    "semicolon": false,
+    "ignores": [
+      "template/*"
+    ]
+  },
   "scripts": {
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "lint": "standard",
+    "lint": "xo",
     "test": "npm run lint && npm run test-coverage",
     "test-coverage": "nyc ava"
   }

@@ -4,7 +4,7 @@ const isValidNpmName = require('is-valid-npm-name')
 module.exports = {
   enforceNewFolder: true,
   move: {
-    'gitignore': '.gitignore'
+    gitignore: '.gitignore'
   },
   prompts: {
     name: {
