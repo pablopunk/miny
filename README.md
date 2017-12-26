@@ -46,12 +46,23 @@ warning The yes flag has been set. This will automatically answer yes to all que
 
 ### Features
 
-| Features | Tools |
-| - | - |
-| tests | [ava](https://github.com/avajs/ava) and [travis-ci](https://travis-ci.org/) |
-| code style | [xo](https://github.com/sindresorhus/xo) (customizable) |
-| code coverage | [nyc](https://github.com/istanbuljs/nyc) and [codecov](https://codecov.io/) |
-| source control | [git](https://git-scm.com/)
+#### Tests
+
+*miny* provides [ava](https://github.com/avajs/ava) to test your code. By default you get a `test.js` with a test example, but you can use all features from *ava* ([check the docs](https://github.com/avajs/ava)).
+
+#### CI
+
+If you activate [travis-ci](https://travis-ci.org/) for your project, it will automatically run tests for you in every push. The build status is shown by default on your `README.md` file.
+
+#### Code coverage
+
+With `npm run coverage` it will run all tests from *ava* and you'll get a report of what lines of code are covered by the tests, thanks to [nyc](https://github.com/istanbuljs/nyc) and [codecov](https://codecov.io/). This is very useful to catch some bugs and by default it shows the coverage percentage in your `README.md` after every push (just right after *travis* runs all tests).
+
+#### Code style
+
+Now *miny* comes with [xo](https://github.com/sindresorhus/xo) by default with some configs on `package.json`: no semicolons, and 2 spaces indentation. To customize this, check [the docs for xo](https://github.com/sindresorhus/xo).
+
+#### Offline
 
 Also, **_miny_ works offline**!
 
