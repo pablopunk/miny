@@ -5,6 +5,9 @@ const isOnline = require('is-online')
 
 module.exports = {
   enforceNewFolder: true,
+  move: {
+    'gitignore': '.gitignore'
+  },
   prompts: {
     name: {
       message: 'Name of your project',
