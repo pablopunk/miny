@@ -65,6 +65,10 @@ With `npm run coverage` it will run all tests from *ava* and you'll get a report
 
 Now *miny* comes with [xo](https://github.com/sindresorhus/xo) by default with some configs on `package.json`: no semicolons, and 2 spaces indentation. To customize this, check [the docs for xo](https://github.com/sindresorhus/xo).
 
+### Autocomplete
+
+Every *miny* template comes with a basic (and customizable) `.tern-project` file that can be used along with [ternjs](http://ternjs.net/) to enable some cool autocomplete features for javascript in your favorite editor. For *vim* I use [completor](https://github.com/maralla/completor.vim)
+
 ### Offline
 
 Also, **_miny_ works offline**!
