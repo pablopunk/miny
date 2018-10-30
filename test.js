@@ -17,7 +17,7 @@ test('Invalid npm name', async t => {
   const err = await t.throws(
     sao.mockPrompt(
       template,
-      Object.assign({}, defaults, {name: 'ñ'})))
+      Object.assign({}, defaults, { name: 'ñ' })))
   t.regex(err.message, /package name had non-URL-safe characters/)
 })
 
@@ -31,7 +31,7 @@ test('Defaults', async t => {
       githubUsername: 'foo'
     }
   )
-  const answers = stream.meta.answers
+  const { answers } = stream.meta
   t.deepEqual(
     answers,
     Object.assign(

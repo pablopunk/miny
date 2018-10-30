@@ -8,7 +8,7 @@ const chalk = require('chalk')
 const log = msg => console.log(chalk.blue(msg))
 const err = msg => console.log(chalk.red(msg))
 
-function cli(args) {
+function cli (args) {
   if (!args._[0]) {
     err('You must provide a name')
     return

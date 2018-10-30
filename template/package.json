@@ -13,7 +13,7 @@
     "ava": "*",
     "codecov": "*",
     "nyc": "*",
-    "xo": "*"
+    "standard": "*"
   },
   "homepage": "<%- githubRepo %>",
   "keywords": [ <%- `${keywords.trim().split(/[, ]+/).map(k => `"${k.trim()}"`).join(', ')}` %> ],
@@ -26,13 +26,9 @@
     "type": "git",
     "url": "<%- githubRepo %>"
   },
-  "xo": {
-    "space": true,
-    "semicolon": false
-  },
   "scripts": {
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "lint": "xo",
+    "lint": "standard",
     "test": "npm run lint && npm run test-coverage",
     "test-coverage": "nyc ava"
   }

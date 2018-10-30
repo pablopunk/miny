@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://travis-ci.org/pablopunk/miny"><img src="https://img.shields.io/travis/pablopunk/miny.svg" /> </a>
   <a href="https://codecov.io/gh/pablopunk/miny"><img src="https://img.shields.io/codecov/c/github/pablopunk/miny.svg" /> </a>
-  <a href="https://github.com/sindresorhus/xo"><img src="https://img.shields.io/badge/code_style-XO-5ed9c7.svg" /> </a>
+  <a href="https://standardjs.com/"><img src="https://cdn.rawgit.com/standard/standard/master/badge.svg" /> </a>
   <a href="https://github.com/pablopunk/miny"><img src="https://img.shields.io/badge/made_with-miny-1eced8.svg" /> </a>
   <a href="https://www.npmjs.com/package/miny"><img src="https://img.shields.io/npm/dt/miny.svg" /></a>
 </p>
@@ -63,7 +63,7 @@ With `npm run coverage` it will run all tests from *ava* and you'll get a report
 
 ### Code style
 
-Now *miny* comes with [xo](https://github.com/sindresorhus/xo) by default with some configs on `package.json`: no semicolons, and 2 spaces indentation. To customize this, check [the docs for xo](https://github.com/sindresorhus/xo).
+It comes with [StandardJS](https://standardjs.com/) as the code style. `npm test` will always check the style of your code and check for syntax errors.
 
 ### Offline
 
