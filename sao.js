@@ -4,7 +4,10 @@ const isValidNpmName = require('is-valid-npm-name')
 module.exports = {
   enforceNewFolder: true,
   move: {
-    gitignore: '.gitignore'
+    gitignore: '.gitignore',
+    npmrc: '.npmrc',
+    editorconfig: '.editorconfig',
+    'travis.yml': '.travis.yml'
   },
   prompts: {
     name: {
