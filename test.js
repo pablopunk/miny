@@ -3,21 +3,22 @@ const sao = require('sao')
 
 const template = __dirname
 
-const defaults = {
+const mock = {
   name: 'my-project',
   description: 'Awesome project',
   author: 'Pablo Varela',
   email: 'pablovarela182@gmail.com',
   website: 'https:/pablo.life',
   githubUsername: 'pablopunk',
-  keywords: 'boilerplate, generator,, npm   package ,,,  miny'
+  keywords: 'boilerplate, generator,, npm   package ,,,  miny',
+  ava: 'yes'
 }
 
 test('Invalid npm name', async t => {
   const err = await t.throws(
     sao.mockPrompt(
       template,
-      Object.assign({}, defaults, { name: 'ñ' })))
+      Object.assign({}, mock, { name: 'ñ' })))
   t.regex(err.message, /package name had non-URL-safe characters/)
 })
 
@@ -28,24 +29,23 @@ test('Defaults', async t => {
       name: 'my-project',
       email: 'pablovarela182@gmail.com',
       author: 'Pablo Varela',
-      githubUsername: 'foo'
+      githubUsername: 'foo',
+      ava: 'yes'
     }
   )
   const { answers } = stream.meta
   t.deepEqual(
     answers,
-    Object.assign(
-      {},
-      defaults,
-      {
-        name: 'my-project',
-        description: 'My new npm module',
-        githubUsername: 'foo',
-        website: 'http://foo.com',
-        githubRepo: 'https://github.com/foo/my-project',
-        authorImg: 'https://gravatar.com/avatar/fa50aeff0ddd6e63273a068b04353d9d?size=100',
-        keywords: 'miny my-project'
-      }
-    )
+    {
+      ...mock,
+      name: 'my-project',
+      description: 'My new npm module',
+      githubUsername: 'foo',
+      website: 'http://foo.com',
+      githubRepo: 'https://github.com/foo/my-project',
+      authorImg: 'https://gravatar.com/avatar/fa50aeff0ddd6e63273a068b04353d9d?size=100',
+      keywords: 'miny my-project',
+      ava: 'yes'
+    }
   )
 })
