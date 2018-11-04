@@ -10,26 +10,36 @@
   "contributors": ["<%- author %> <<%- email %>>"],
   "dependencies": {},
   "devDependencies": {
-    "ava": "*",
-    "codecov": "*",
-    "nyc": "*",
+    <% if (ava) { %>
+      "ava": "*",
+    <% } %>
+    <% if (coverage) { %>
+      "codecov": "*",
+      "nyc": "*",
+    <% } %>
     "standard": "*"
   },
   "homepage": "<%- githubRepo %>",
   "keywords": [ <%- `${keywords.trim().split(/[, ]+/).map(k => `"${k.trim()}"`).join(', ')}` %> ],
   "license": "MIT",
   "main": "index.js",
-  "nyc": {
-    "reporter": ["lcov", "html", "text"]
-  },
+  <% if (coverage) { %>
+    "nyc": {
+      "reporter": ["lcov", "html", "text"]
+    },
+  <% } %>
   "repository": {
     "type": "git",
     "url": "<%- githubRepo %>"
   },
   "scripts": {
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "lint": "standard",
-    "test": "npm run lint && npm run test-coverage",
-    "test-coverage": "nyc ava"
+    <% if (coverage) { %>
+      "test-coverage": "nyc ava",
+      "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+      "test": "npm run lint && npm run test-coverage",
+    <% } else if (ava) { %>
+      "test": "ava,"
+    <% } %>
+    "lint": "standard"
   }
 }

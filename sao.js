@@ -51,6 +51,21 @@ module.exports = {
     keywords: {
       message: 'Write some keywords related to your project',
       default: answers => `miny ${answers.name}`
+    },
+    ava: {
+      type: 'list',
+      message: 'Do you want unit tests and code coverage?',
+      choices: [
+        'yes',
+        'no'
+      ]
+    }
+  },
+  data (answers) {
+    return {
+      ava: answers.ava === 'yes',
+      // TODO: add answers.coverage (waiting for https://github.com/saojs/sao/issues/103)
+      coverage: answers.ava === 'yes'
     }
   },
   gitInit: true,
