@@ -77,7 +77,7 @@ Also, **_miny_ works offline**!
 * [npm-name-exists](https://github.com/pablopunk/npm-name-exists)
 * [prepend-url](https://github.com/pablopunk/prepend-url)
 * [microfetch](https://github.com/pablopunk/microfetch)
-* [football-matches](https://github.com/pablopunk/football-matches)
+* [microsoccer](https://github.com/pablopunk/microsoccer)
 * _Add yours here_... 😊
 
 ## Related
