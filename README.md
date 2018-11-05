@@ -37,7 +37,7 @@ $ miny my-awesome-project
 ```
 
 <p align="center">
-  <video src="https://file-ivueiizzkg.now.sh/" width="400px"></video>
+  <img src="https://file-rkejrchiww.now.sh" alt="Screencast" width="450px">
 </p>
 
 You can also use de option `-y` to skip all the questions and use the defaults:
