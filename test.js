@@ -22,6 +22,33 @@ test('Invalid npm name', async t => {
   t.regex(err.message, /package name had non-URL-safe characters/)
 })
 
+test('No code coverage if no tests', async t => {
+  const stream = await sao.mockPrompt(
+    template,
+    {
+      ...mock,
+      ava: 'no'
+    }
+  )
+
+  const { answers } = stream.meta
+  t.is(answers.coverage, undefined)
+})
+
+test('Can have tests without code coverage', async t => {
+  const stream = await sao.mockPrompt(
+    template,
+    {
+      ...mock,
+      coverage: 'no'
+    }
+  )
+
+  const { answers } = stream.meta
+  t.is(answers.ava, 'yes')
+  t.is(answers.coverage, 'no')
+})
+
 test('Defaults', async t => {
   const stream = await sao.mockPrompt(
     template,
