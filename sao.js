@@ -54,18 +54,26 @@ module.exports = {
     },
     ava: {
       type: 'list',
-      message: 'Do you want unit tests and code coverage?',
+      message: 'Do you want unit tests?',
       choices: [
         'yes',
         'no'
       ]
+    },
+    coverage: {
+      type: 'list',
+      message: 'Do you want code coverage for tests?',
+      choices: [
+        'yes',
+        'no'
+      ],
+      when: ({ ava }) => ava === 'yes'
     }
   },
-  data (answers) {
+  data ({ ava, coverage }) {
     return {
-      ava: answers.ava === 'yes',
-      // TODO: add answers.coverage (waiting for https://github.com/saojs/sao/issues/103)
-      coverage: answers.ava === 'yes'
+      ava: ava === 'yes',
+      coverage: coverage === 'yes'
     }
   },
   gitInit: true,

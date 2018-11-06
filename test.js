@@ -30,7 +30,8 @@ test('Defaults', async t => {
       email: 'pablovarela182@gmail.com',
       author: 'Pablo Varela',
       githubUsername: 'foo',
-      ava: 'yes'
+      ava: 'yes',
+      coverage: 'yes'
     }
   )
   const { answers } = stream.meta
@@ -45,7 +46,8 @@ test('Defaults', async t => {
       githubRepo: 'https://github.com/foo/my-project',
       authorImg: 'https://gravatar.com/avatar/fa50aeff0ddd6e63273a068b04353d9d?size=100',
       keywords: 'miny my-project',
-      ava: 'yes'
+      ava: 'yes',
+      coverage: 'yes'
     }
   )
 })
