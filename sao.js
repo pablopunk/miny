@@ -52,27 +52,28 @@ module.exports = {
       message: 'Write some keywords related to your project',
       default: answers => `miny ${answers.name}`
     },
-    ava: {
+    test: {
       type: 'list',
       message: 'Do you want unit tests?',
       choices: [
-        'yes',
-        'no'
+        'ava (full featured framework)',
+        'myass (fast and lightweight)',
+        'none'
       ]
     },
     coverage: {
       type: 'list',
-      message: 'Do you want code coverage for tests?',
+      message: 'Do you want code coverage for the tests?',
       choices: [
         'yes',
         'no'
       ],
-      when: ({ ava }) => ava === 'yes'
+      when: ({ test }) => test !== 'none'
     }
   },
-  data ({ ava, coverage }) {
+  data ({ test, coverage }) {
     return {
-      ava: ava === 'yes',
+      test: test.split(' ')[0],
       coverage: coverage === 'yes'
     }
   },
