@@ -53,7 +53,7 @@ warning The yes flag has been set. This will automatically answer yes to all que
 
 ### Tests
 
-*miny* provides [ava](https://github.com/avajs/ava) to test your code. By default you get a `test.js` with a test example, but you can use all features from *ava* ([check the docs](https://github.com/avajs/ava)). Running `npm test` will execute *ava* and other [code coverage tools](#code-coverage).
+*miny* provides [ava](https://github.com/avajs/ava) or [](https://github.com/pablopunk/myass) to test your code. By default you get a `test.js` with a test example. Running `npm test` will execute [the linter](#code-style) and other [code coverage tools](#code-coverage).
 
 ### CI
 
@@ -61,7 +61,7 @@ If you activate [travis-ci](https://travis-ci.org/) for your project, it will au
 
 ### Code coverage
 
-With `npm run coverage` it will run all tests from *ava* and you'll get a report of what lines of code are covered by the tests, thanks to [nyc](https://github.com/istanbuljs/nyc) and [codecov](https://codecov.io/). This is very useful to catch some bugs and by default it shows the coverage percentage in your `README.md` after every push (just right after *travis* runs all tests).
+With `npm run coverage` it will run all tests and you'll get a report of what lines of code are covered by the tests, thanks to [nyc](https://github.com/istanbuljs/nyc) and [codecov](https://codecov.io/). This is very useful to catch some bugs and by default it shows the coverage percentage in your `README.md` after every push (just right after *travis* runs all tests).
 
 ### Code style
 
