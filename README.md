@@ -53,7 +53,7 @@ warning The yes flag has been set. This will automatically answer yes to all que
 
 ### Tests
 
-*miny* provides [ava](https://github.com/avajs/ava) or [](https://github.com/pablopunk/myass) to test your code. By default you get a `test.js` with a test example. Running `npm test` will execute [the linter](#code-style) and other [code coverage tools](#code-coverage).
+*miny* provides [ava](https://github.com/avajs/ava) or [myass](https://github.com/pablopunk/myass) to test your code. By default you get a `test.js` with a test example. Running `npm test` will execute [the linter](#code-style) and other [code coverage tools](#code-coverage).
 
 ### CI
 
