@@ -80,6 +80,7 @@ Also, **_miny_ works offline**!
 * [prepend-url](https://github.com/pablopunk/prepend-url)
 * [microfetch](https://github.com/pablopunk/microfetch)
 * [microsoccer](https://github.com/pablopunk/microsoccer)
+* [myass](https://github.com/pablopunk/myass)
 * _Add yours here_... 😊
 
 ## Related
