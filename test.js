@@ -11,7 +11,7 @@ const mock = {
   website: 'https:/pablo.life',
   githubUsername: 'pablopunk',
   keywords: 'boilerplate, generator,, npm   package ,,,  miny',
-  ava: 'yes'
+  test: 'none'
 }
 
 test('Invalid npm name', async t => {
@@ -25,10 +25,7 @@ test('Invalid npm name', async t => {
 test('No code coverage if no tests', async t => {
   const stream = await sao.mockPrompt(
     template,
-    {
-      ...mock,
-      ava: 'no'
-    }
+    mock
   )
 
   const { answers } = stream.meta
@@ -40,12 +37,13 @@ test('Can have tests without code coverage', async t => {
     template,
     {
       ...mock,
+      test: 'ava',
       coverage: 'no'
     }
   )
 
   const { answers } = stream.meta
-  t.is(answers.ava, 'yes')
+  t.not(answers.test, 'none')
   t.is(answers.coverage, 'no')
 })
 
@@ -57,7 +55,7 @@ test('Defaults', async t => {
       email: 'pablovarela182@gmail.com',
       author: 'Pablo Varela',
       githubUsername: 'foo',
-      ava: 'yes',
+      test: 'none',
       coverage: 'yes'
     }
   )
@@ -73,7 +71,7 @@ test('Defaults', async t => {
       githubRepo: 'https://github.com/foo/my-project',
       authorImg: 'https://gravatar.com/avatar/fa50aeff0ddd6e63273a068b04353d9d?size=100',
       keywords: 'miny my-project',
-      ava: 'yes',
+      test: 'none',
       coverage: 'yes'
     }
   )
