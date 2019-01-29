@@ -55,6 +55,7 @@ module.exports = {
     test: {
       type: 'list',
       message: 'Do you want unit tests?',
+      default: 'myass',
       choices: [
         'ava (full featured framework)',
         'myass (fast and lightweight)',
