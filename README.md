@@ -17,16 +17,13 @@
 
 > This module is a very easy way of getting started in nodejs, npm modules, TDD and CI.
 
-
 [Look at miny's awesome features](#features)
-
 
 ## Install
 
 ```bash
 npm install -g miny
 ```
-
 
 ## Usage
 
@@ -53,7 +50,7 @@ warning The yes flag has been set. This will automatically answer yes to all que
 
 ### Tests
 
-*miny* provides [ava](https://github.com/avajs/ava) or [myass](https://github.com/pablopunk/myass) to test your code. By default you get a `test.js` with a test example. Running `npm test` will execute [the linter](#code-style) and other [code coverage tools](#code-coverage).
+_miny_ provides [ava](https://github.com/avajs/ava) or [myass](https://github.com/pablopunk/myass) to test your code. By default you get a `test.js` with a test example. Running `npm test` will execute [the linter](#code-style) and other [code coverage tools](#code-coverage).
 
 ### CI
 
@@ -61,42 +58,40 @@ If you activate [travis-ci](https://travis-ci.org/) for your project, it will au
 
 ### Code coverage
 
-With `npm run coverage` it will run all tests and you'll get a report of what lines of code are covered by the tests, thanks to [nyc](https://github.com/istanbuljs/nyc) and [codecov](https://codecov.io/). This is very useful to catch some bugs and by default it shows the coverage percentage in your `README.md` after every push (just right after *travis* runs all tests).
+With `npm run coverage` it will run all tests and you'll get a report of what lines of code are covered by the tests, thanks to [nyc](https://github.com/istanbuljs/nyc) and [codecov](https://codecov.io/). This is very useful to catch some bugs and by default it shows the coverage percentage in your `README.md` after every push (just right after _travis_ runs all tests).
 
 ### Code style
 
-It comes with [StandardJS](https://standardjs.com/) as the code style. `npm test` will always check the style of your code and check for syntax errors.
+Forget about linters. They suck. Use whatever tool you want for writing your code as long as it is valid code. _miny_ comes with `prettier`, which will format the code for you on each commit. Each time you make a commit, `prettier` makes your code beautiful.
+
+You can customize the rules it follows by modifying the section `prettier` in `package.json`. By default, it will use _2 spaces as tabs_, remove unnecessary semicolons and convert double quoutes to _single quoutes_. You can add/remove [all of these rules](https://prettier.io/docs/en/options.html).
 
 ### Offline
 
 Also, **_miny_ works offline**!
 
-
 ## Examples
 
-* miny itself was created with miny. Yes.
-* [nuup](https://github.com/pablopunk/nuup)
-* [npm-name-exists](https://github.com/pablopunk/npm-name-exists)
-* [prepend-url](https://github.com/pablopunk/prepend-url)
-* [microfetch](https://github.com/pablopunk/microfetch)
-* [microsoccer](https://github.com/pablopunk/microsoccer)
-* [myass](https://github.com/pablopunk/myass)
-* _Add yours here_... 😊
+- miny itself was created with miny. Yes.
+- [nuup](https://github.com/pablopunk/nuup)
+- [npm-name-exists](https://github.com/pablopunk/npm-name-exists)
+- [prepend-url](https://github.com/pablopunk/prepend-url)
+- [microfetch](https://github.com/pablopunk/microfetch)
+- [microsoccer](https://github.com/pablopunk/microsoccer)
+- [myass](https://github.com/pablopunk/myass)
+- _Add yours here_... 😊
 
 ## Related
 
-* [lass](https://lass.js.org): Nodejs boilerplate
-* [nuup](https://github.com/pablopunk/nuup): `npm publish` with superpowers
-
+- [lass](https://lass.js.org): Nodejs boilerplate
+- [nuup](https://github.com/pablopunk/nuup): `npm publish` with superpowers
 
 ## License
 
 MIT
 
-
 ## Author
 
 | ![me](https://gravatar.com/avatar/fa50aeff0ddd6e63273a068b04353d9d?size=100) |
 | ---------------------------------------------------------------------------- |
-| [Pablo Varela](https://pablo.life)                                            |
-
+| [Pablo Varela](https://pablo.life)                                           |

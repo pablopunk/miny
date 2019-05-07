@@ -17,7 +17,9 @@
       "codecov": "*",
       "nyc": "*",
     <% } %>
-    "standard": "*"
+    "prettier": "*",
+    "pretty-quick": "*",
+    "husky": "*"
   },
   "homepage": "<%- githubRepo %>",
   "keywords": [ <%- `${keywords.trim().split(/[, ]+/).map(k => `"${k.trim()}"`).join(', ')}` %> ],
@@ -28,6 +30,16 @@
       "reporter": ["lcov", "html", "text"]
     },
   <% } %>
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2
+  },
   "repository": {
     "type": "git",
     "url": "<%- githubRepo %>"
