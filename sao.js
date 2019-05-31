@@ -1,5 +1,9 @@
+const { promises: fs } = require('fs')
+const path = require('path')
 const gravatarUrl = require('gravatar-url')
 const isValidNpmName = require('is-valid-npm-name')
+
+const testFiles = ['.travis.yml', 'test.js']
 
 module.exports = {
   enforceNewFolder: true,
@@ -41,7 +45,8 @@ module.exports = {
     },
     githubRepo: {
       message: 'What is going to be the github repo',
-      default: answers => `https://github.com/${answers.githubUsername}/${answers.name}`
+      default: answers =>
+        `https://github.com/${answers.githubUsername}/${answers.name}`
     },
     authorImg: {
       message: 'Your profile picture (link)',
@@ -65,14 +70,11 @@ module.exports = {
     coverage: {
       type: 'list',
       message: 'Do you want code coverage for the tests?',
-      choices: [
-        'yes',
-        'no'
-      ],
+      choices: ['yes', 'no'],
       when: ({ test }) => test !== 'none'
     }
   },
-  data ({ test, coverage }) {
+  data({ test, coverage }) {
     return {
       test: test.split(' ')[0],
       coverage: coverage === 'yes'
@@ -80,5 +82,12 @@ module.exports = {
   },
   gitInit: true,
   npmInstall: true,
-  showTip: true
+  showTip: true,
+  post: async ({ answers, folderPath }) => {
+    if (answers.test === 'none') {
+      testFiles.forEach(fileToRemove =>
+        fs.unlink(path.join(folderPath, fileToRemove))
+      )
+    }
+  }
 }
