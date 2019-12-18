@@ -8,7 +8,7 @@ const mock = {
   description: 'Awesome project',
   author: 'Pablo Varela',
   email: 'pablovarela182@gmail.com',
-  website: 'https:/pablo.life',
+  website: 'https:/pablo.pink',
   githubUsername: 'pablopunk',
   keywords: 'boilerplate, generator,, npm   package ,,,  miny',
   test: 'none'
