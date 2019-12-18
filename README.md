@@ -48,17 +48,17 @@ warning The yes flag has been set. This will automatically answer yes to all que
 
 ## Features
 
-### Tests
+### Tests. *optional*
 
-_miny_ provides [ava](https://github.com/avajs/ava) or [myass](https://github.com/pablopunk/myass) to test your code. By default you get a `test.js` with a test example. Running `npm test` will execute [the linter](#code-style) and other [code coverage tools](#code-coverage).
+_miny_ provides [ava](https://github.com/avajs/ava) or [myass](https://github.com/pablopunk/myass) to test your code. By default you get a `test.js` with a test example. Running `npm test` [code coverage tools](#code-coverage).
 
 ### CI
 
 If you activate [travis-ci](https://travis-ci.org/) for your project, it will automatically run tests for you in every push. The build status is shown by default on your `README.md` file.
 
-### Code coverage
+### Code coverage. *optional*
 
-With `npm run coverage` it will run all tests and you'll get a report of what lines of code are covered by the tests, thanks to [nyc](https://github.com/istanbuljs/nyc) and [codecov](https://codecov.io/). This is very useful to catch some bugs and by default it shows the coverage percentage in your `README.md` after every push (just right after _travis_ runs all tests).
+With `npm test` or `npm run test-coverage` it will run all tests and you'll get a report of what lines of code are covered by the tests, thanks to [nyc](https://github.com/istanbuljs/nyc) and [codecov](https://codecov.io/). This is very useful to catch some bugs and by default it shows the coverage percentage in your `README.md` after every push (just right after _travis_ runs all tests).
 
 ### Code style
 
