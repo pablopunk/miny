@@ -2,14 +2,14 @@
   "name": "miny",
   "description": "The minimal module generator that generated itself",
   "version": "6.0.4",
-  "author": "Pablo Varela <pablovarela182@gmail.com>",
+  "author": "Pablo Varela <yo@pablo.pink>",
   "bin": "cli.js",
   "bugs": {
     "url": "https://github.com/pablopunk/miny/issues",
-    "email": "pablovarela182@gmail.com"
+    "email": "yo@pablo.pink"
   },
   "contributors": [
-    "Pablo Varela <pablovarela182@gmail.com>"
+    "Pablo Varela <yo@pablo.pink>"
   ],
   "dependencies": {
     "camelcase": "^4.1.0",
