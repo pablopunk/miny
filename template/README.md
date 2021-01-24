@@ -1,7 +1,6 @@
 # <%- name %>
 
 <p align="center">
-  <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" /> </a>
   <a href="https://github.com/pablopunk/miny"><img src="https://img.shields.io/badge/made_with-miny-1eced8.svg" /> </a>
   <a href="https://www.npmjs.com/package/<%- name %>"><img src="https://img.shields.io/npm/dt/<%- name %>.svg" /></a>
 </p>
