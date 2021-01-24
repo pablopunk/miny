@@ -13,10 +13,6 @@
     <% if (test !== 'none') { %>
       "<%- test -%>": "*",
     <% } %>
-    <% if (coverage) { %>
-      "codecov": "*",
-      "nyc": "*",
-    <% } %>
     "prettier": "*",
     "pretty-quick": "*",
     "husky": "*"
@@ -25,11 +21,6 @@
   "keywords": [ <%- `${keywords.trim().split(/[, ]+/).map(k => `"${k.trim()}"`).join(', ')}` %> ],
   "license": "MIT",
   "main": "index.js",
-  <% if (coverage) { %>
-    "nyc": {
-      "reporter": ["lcov", "html", "text"]
-    },
-  <% } %>
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
@@ -45,11 +36,7 @@
     "url": "<%- githubRepo %>"
   },
   "scripts": {
-    <% if (coverage) { %>
-      "test-coverage": "nyc <%- test -%>",
-      "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-      "test": "npm run test-coverage"
-    <% } else if (test !== 'none') { %>
+    <% if (test !== 'none') { %>
       "test": "<%- test -%>"
     <% } %>
   }

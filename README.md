@@ -1,8 +1,6 @@
 # 💁🏻 miny
 
 <p align="center">
-  <a href="https://travis-ci.org/pablopunk/miny"><img src="https://img.shields.io/travis/pablopunk/miny.svg" /> </a>
-  <a href="https://codecov.io/gh/pablopunk/miny"><img src="https://img.shields.io/codecov/c/github/pablopunk/miny.svg" /> </a>
   <a href="https://standardjs.com/"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" /> </a>
   <a href="https://github.com/pablopunk/miny"><img src="https://img.shields.io/badge/made_with-miny-1eced8.svg" /> </a>
   <a href="https://www.npmjs.com/package/miny"><img src="https://img.shields.io/npm/dt/miny.svg" /></a>
@@ -48,23 +46,21 @@ warning The yes flag has been set. This will automatically answer yes to all que
 
 ## Features
 
-### Tests. *optional*
+### Tests. _optional_
 
-_miny_ provides [ava](https://github.com/avajs/ava) or [myass](https://github.com/pablopunk/myass) to test your code. By default you get a `test.js` with a test example. Running `npm test` [code coverage tools](#code-coverage).
+_miny_ provides [ava](https://github.com/avajs/ava) or [myass](https://github.com/pablopunk/myass) to test your code. By default you get a `test.js` with a test example. Running `npm test` will execute all your tests.
 
 ### CI
 
-If you activate [travis-ci](https://travis-ci.org/) for your project, it will automatically run tests for you in every push. The build status is shown by default on your `README.md` file.
-
-### Code coverage. *optional*
-
-With `npm test` or `npm run test-coverage` it will run all tests and you'll get a report of what lines of code are covered by the tests, thanks to [nyc](https://github.com/istanbuljs/nyc) and [codecov](https://codecov.io/). This is very useful to catch some bugs and by default it shows the coverage percentage in your `README.md` after every push (just right after _travis_ runs all tests).
+It includes [github actions](https://github.com/features/actions) that will automatically run tests on every push and pull request.
 
 ### Code style
 
-Forget about linters. They suck. Use whatever tool you want for writing your code as long as it is valid code. _miny_ comes with `prettier`, which will format the code for you on each commit. Each time you make a commit, `prettier` makes your code beautiful.
+_miny_ comes with `prettier` built-in to automatically format your code on every commit, so you can forget about code inconsistencies across your codebase.
 
-You can customize the rules it follows by modifying the section `prettier` in `package.json`. By default, it will use _2 spaces as tabs_, remove unnecessary semicolons and convert double quoutes to _single quoutes_. You can add/remove [all of these rules](https://prettier.io/docs/en/options.html).
+It's also useful to use an actual linter for catching some bugs or not used code, so it also includes `eslint` to lint all your code and help you fixing potential bugs.
+
+You can customize the rules it follows by modifying the section `prettier` in `package.json`. By default, it will use _2 spaces as tabs_, remove unnecessary semicolons and convert double quoutes to _single quoutes_. You can add/remove [all of these rules](https://prettier.io/docs/en/options.html). You can also edit the `eslint` rules in `.eslintrc.yml`. Take a look at [eslint docs](https://eslint.org/docs/user-guide/configuring).
 
 ### Offline
 
@@ -72,7 +68,7 @@ Also, **_miny_ works offline**!
 
 ## Examples
 
-- miny itself was created with miny. Yes.
+- _miny_ itself was created with miny. Yes.
 - [nuup](https://github.com/pablopunk/nuup)
 - [npm-name-exists](https://github.com/pablopunk/npm-name-exists)
 - [prepend-url](https://github.com/pablopunk/prepend-url)
