@@ -9,7 +9,6 @@ module.exports = {
   enforceNewFolder: true,
   move: {
     gitignore: '.gitignore',
-    npmrc: '.npmrc',
     editorconfig: '.editorconfig',
     'workflow.yml': '.github/workflows/test.yml'
   },
