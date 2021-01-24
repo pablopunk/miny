@@ -38,9 +38,9 @@
   },
   "scripts": {
     "lint": "eslint --ext .js .",
-    "lint-fix": "eslint --fix --ext .js .",
+    "lint-fix": "eslint --fix --ext .js ."
     <% if (test !== 'none') { %>
-      "test": "npm run lint && <%- test -%>"
+      ,"test": "npm run lint && <%- test -%>"
     <% } %>
   }
 }
