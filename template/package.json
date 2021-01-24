@@ -15,7 +15,8 @@
     <% } %>
     "prettier": "*",
     "pretty-quick": "*",
-    "husky": "*"
+    "husky": "*",
+    "eslint": "*"
   },
   "homepage": "<%- githubRepo %>",
   "keywords": [ <%- `${keywords.trim().split(/[, ]+/).map(k => `"${k.trim()}"`).join(', ')}` %> ],
@@ -36,8 +37,10 @@
     "url": "<%- githubRepo %>"
   },
   "scripts": {
+    "lint": "eslint --ext .js .",
+    "lint-fix": "eslint --fix --ext .js .",
     <% if (test !== 'none') { %>
-      "test": "<%- test -%>"
+      "test": "npm run lint && <%- test -%>"
     <% } %>
   }
 }

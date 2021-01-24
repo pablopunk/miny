@@ -59,6 +59,8 @@
     "url": "https://github.com/pablopunk/miny"
   },
   "scripts": {
-    "test": "ava"
+    "lint": "eslint --ext .js .",
+    "lint-fix": "eslint --fix --ext .js .",
+    "test": "npm run lint && ava"
   }
 }

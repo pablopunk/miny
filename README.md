@@ -60,7 +60,7 @@ _miny_ comes with `prettier` built-in to automatically format your code on every
 
 It's also useful to use an actual linter for catching some bugs or not used code, so it also includes `eslint` to lint all your code and help you fixing potential bugs.
 
-You can customize the rules it follows by modifying the section `prettier` in `package.json`. By default, it will use _2 spaces as tabs_, remove unnecessary semicolons and convert double quoutes to _single quoutes_. You can add/remove [all of these rules](https://prettier.io/docs/en/options.html). You can also edit the `eslint` rules in `.eslintrc.yml`. Take a look at [eslint docs](https://eslint.org/docs/user-guide/configuring).
+You can customize the rules it follows by modifying the section `prettier` in `package.json`. By default, it will use _2 spaces as tabs_, remove unnecessary semicolons and convert double quoutes to _single quoutes_. You can add/remove [all of these rules](https://prettier.io/docs/en/options.html). You can also edit the `eslint` rules in `.eslintrc.yml`. Take a look at [eslint docs](https://eslint.org/docs/user-guide/configuring). Runnning `npm run lint` will run both prettier and eslint in your project. There's also a `lint-fix` npm script that can help fixing trivial errors.
 
 ### Offline
 
