@@ -3,7 +3,7 @@ const path = require('path')
 const gravatarUrl = require('gravatar-url')
 const isValidNpmName = require('is-valid-npm-name')
 
-const testFiles = ['.travis.yml', 'test.js']
+const testFiles = ['.github/worflows/test.yml', 'test.js']
 
 module.exports = {
   enforceNewFolder: true,
@@ -11,7 +11,7 @@ module.exports = {
     gitignore: '.gitignore',
     npmrc: '.npmrc',
     editorconfig: '.editorconfig',
-    'travis.yml': '.travis.yml'
+    'workflow.yml': '.github/workflows/test.yml'
   },
   prompts: {
     name: {
@@ -66,18 +66,11 @@ module.exports = {
         'myass (fast and lightweight)',
         'none'
       ]
-    },
-    coverage: {
-      type: 'list',
-      message: 'Do you want code coverage for the tests?',
-      choices: ['yes', 'no'],
-      when: ({ test }) => test !== 'none'
     }
   },
-  data({ test, coverage }) {
+  data({ test }) {
     return {
-      test: test.split(' ')[0],
-      coverage: coverage === 'yes'
+      test: test.split(' ')[0]
     }
   },
   gitInit: true,

@@ -9,7 +9,7 @@
     "email": "yo@pablo.pink"
   },
   "contributors": [
-    "Pablo Varela <yo@pablo.pink>"
+    "Pablo Varela <pablo@pablopunk.com>"
   ],
   "dependencies": {
     "camelcase": "^4.1.0",
@@ -21,9 +21,8 @@
   },
   "devDependencies": {
     "ava": "^0.25.0",
-    "codecov": "^3.1.0",
+    "eslint": "^7.18.0",
     "husky": "^2.2.0",
-    "nyc": "^13.1.0",
     "prettier": "^1.17.0",
     "pretty-quick": "^1.10.0"
   },
@@ -55,20 +54,13 @@
     "singleQuote": true,
     "tabWidth": 2
   },
-  "nyc": {
-    "reporter": [
-      "lcov",
-      "html",
-      "text"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/pablopunk/miny"
   },
   "scripts": {
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "test": "npm run test-coverage",
-    "test-coverage": "nyc ava"
+    "lint": "eslint --ext .js .",
+    "lint-fix": "eslint --fix --ext .js .",
+    "test": "npm run lint && ava"
   }
 }
