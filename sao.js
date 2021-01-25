@@ -10,6 +10,7 @@ module.exports = {
   move: {
     gitignore: '.gitignore',
     editorconfig: '.editorconfig',
+    'eslintrc.yml': '.eslintrc.yml',
     'workflow.yml': '.github/workflows/test.yml'
   },
   prompts: {
